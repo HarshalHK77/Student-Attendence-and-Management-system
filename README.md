@@ -6,8 +6,8 @@
   <li>User Login Page</li>
   <br>
   
-  ![AdminLoginPage](https://github.com/HarshalHK77/Student-Attendence-and-Management-system/assets/82582591/1bba4f5d-84ae-40c2-a486-c316a8044c38)
-
+  ![UserLoginPage](https://github.com/HarshalHK77/Student-Attendence-and-Management-system/assets/82582591/f749315f-5160-421e-a673-a329790f995b)
+  
   <br>
   <li>Admin Login Page</li>
   <br>
