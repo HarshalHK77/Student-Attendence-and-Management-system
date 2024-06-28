@@ -176,7 +176,7 @@ public class AdminPage extends JFrame implements ActionListener {
     }
     private void fetchDataFromDatabase() {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "Harshal@770926");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "password");
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM student_records");
 
@@ -329,7 +329,7 @@ public class AdminPage extends JFrame implements ActionListener {
     }
     void countFrequencyAndUpdate() {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "Harshal@770926");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "password");
             Statement statement = connection.createStatement();
 
             // Query to get the frequency of each StudentId with attendance_status=1
@@ -386,7 +386,7 @@ public class AdminPage extends JFrame implements ActionListener {
     }
     private void calculatePercentageAndUpdate() {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "Harshal@770926");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "password");
             Statement statement = connection.createStatement();
 
             // Query to get lec_attended and lec_conducted for each StudentId
@@ -449,7 +449,7 @@ public class AdminPage extends JFrame implements ActionListener {
 
     private static void addNewLectureAndUpdate() {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "Harshal@770926");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "password");
             Statement statement = connection.createStatement();
 
             // Increment lec_conducted for all students in student_records
