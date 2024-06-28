@@ -107,7 +107,7 @@ public class AddNewLecture extends JFrame implements ActionListener {
                 String selectedOption = lectime.getSelectedItem().toString();
 
                 // Establish a connection to your MySQL database
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "Harshal@770926");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_attendance", "root", "password");
 
                 // Fetch student data from the Student_records table
                 String fetchQuery = "SELECT student_id, student_name FROM Student_records";
